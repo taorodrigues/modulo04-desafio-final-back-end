@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "1b6a2149-c836-40af-8cf0-46627f7034b5",
+		"name": "MODULO 04 - DESAFIO  FINAL -  grades-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET GRADES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-gradesapi.herokuapp.com/grade/",
+					"protocol": "https",
+					"host": [
+						"backend-gradesapi",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"grade",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET GRADE BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-gradesapi.herokuapp.com/grade/5fa9bdba455a6246b891c4e6",
+					"protocol": "https",
+					"host": [
+						"backend-gradesapi",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"grade",
+						"5fa9bdba455a6246b891c4e6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE GRADE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"name\": \"Thiago Rodrigues\",\r\n      \"subject\": \"03 - React\",\r\n      \"type\": \"Fórum\",\r\n      \"value\": \"10\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-gradesapi.herokuapp.com/grade",
+					"protocol": "https",
+					"host": [
+						"backend-gradesapi",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"grade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE GRADE BY ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Testeeee\",\r\n    \"subject\": \"Subject Teste\",\r\n    \"type\": \"Desafio Teste\",\r\n    \"value\": \"15\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-gradesapi.herokuapp.com/grade/5fa97c19d9e81a50bcc05d97",
+					"protocol": "https",
+					"host": [
+						"backend-gradesapi",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"grade",
+						"5fa97c19d9e81a50bcc05d97"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE GRADE BY ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://backend-gradesapi.herokuapp.com/grade/5fa8b323455a6246b891c4b9",
+					"protocol": "https",
+					"host": [
+						"backend-gradesapi",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"grade",
+						"5fa8b323455a6246b891c4b9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ALL",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://backend-gradesapi.herokuapp.com/grade/",
+					"protocol": "https",
+					"host": [
+						"backend-gradesapi",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"grade",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
